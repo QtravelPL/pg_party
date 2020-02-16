@@ -20,9 +20,9 @@ module PgParty
 
           # creating and persisting new records from a child partition
           # will ultimately insert into the parent partition table
-          def self.new(*args, &blk)
-            superclass.new(*args, &blk)
-          end
+          # def self.new(*args, &blk)
+          #   superclass.new(*args, &blk)
+          # end
 
           # to avoid unnecessary db lookups
           def self.partitions
